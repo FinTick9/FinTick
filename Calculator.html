@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #3366ff;
+  padding: 2px;
+  text-align: center;
+  font-family: "Georgia";
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #a6a6a6;
+  color: black;
+}
+
+.column {
+  float: left;
+  width: 300px;
+  height: 300px;
+  border: 5px solid gray;
+  padding: 15px;
+  color: white;
+  background-color: #3366ff;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body bgcolor= #ccffcc>
+
+<div class="header">
+  <h1 style="color: #ccffcc;">FinTick.com</h1>
+  <p style="color: #ccffcc;">The Best stock analysis site of Bangladesh</p> 
+</div>
+
+<div class="topnav">
+  <a href="Home.html">Home</a>
+  <a href="#" style="background-color: green">Calculators</a>
+  <a href="#">News</a>
+  <a href="#"></a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>Lumpsum Calculator</h2>
+    <p>Consider a Lumpsum investment? Estimate
+your future wealth by using our Lumpsum Calculator.
+</p>
+  </div>
+  
+  <div class="column">
+    <h2>SIP Calculator</h2>
+    <p>With the SIP Calculator, you can estimate how much
+wealth you can generate over the years.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Goal Planning Lumpsum </h2>
+    <p>Would you like to invest and become rich once? 
+Calculate your investment amount for this with our
+one-time investment calculator.
+</p>
+  </div>
+  
+  <div class="column">
+    <h2>Goal Planning SIP </h2>
+    <p>How much do you need to invest each year or month to
+build your wealth? Calculate your investment with our
+regular investment calculator.
+</p>
+  </div>
+  
+  <div class="column">
+    <h2>Stock Market vs FD Returns </h2>
+    <p>Which is better fixed deposit or stock investment?
+ In either case, calculate your returns with
+our Return Calculator.
+</p>
+  </div>
+  
+</div>
+
+</body>
+</html>
+
+
